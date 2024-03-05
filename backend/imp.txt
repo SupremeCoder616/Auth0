@@ -1,0 +1,7 @@
+
+    secret: jwks.expressJwtSecret({
+        cache:true,
+        rateLimit: true,
+        jwksRequestsPerMinute: 5,
+        jwksUri: 'https://ambient-coder.us.auth0.com/.well-known/jwks.json'
+    }),
